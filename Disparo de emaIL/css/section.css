@@ -1,0 +1,43 @@
+section {
+    background-color: #ffffff00;
+    width: calc(100% - 304px);
+    height: 45px;
+    position: fixed;
+    margin-top: 32px;
+    right: 0;
+}
+
+section input {
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+    padding: 5px;
+    color: rgb(179, 173, 174);
+    background-color: #239e9c00;
+    border: 0;
+    border-bottom: 2px solid rgb(247, 242, 223);
+}
+
+section input:focus {
+    outline: none;
+    color: aliceblue;
+    border-bottom: 3px solid #25dcd6;
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+        margin-top: 16px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section input {
+        width: 65%;
+    }
+}

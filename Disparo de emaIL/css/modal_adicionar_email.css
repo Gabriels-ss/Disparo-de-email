@@ -1,0 +1,96 @@
+#modal {
+
+    display: block;
+    background-color: #7FACB9;
+    width: 550px;
+    height: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+    z-index: 1000;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.6);
+    z-index: 999;
+    pointer-events: auto;
+}
+
+#titulo_modal {
+    text-align: center;
+
+}
+
+#input_nome,
+#input_email {
+    width: 450px;
+    margin: 15px auto;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+#input_nome:focus,
+#input_email:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+#caixa {
+    background-color: #cccccc00;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 40% auto;
+    width: 260px;
+}
+
+#button_salvar,
+#button_cancelar {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#button_salvar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#button_cancelar {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#button_salvar:hover,
+#button_cancelar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#button_salvar:active,
+#button_cancelar:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

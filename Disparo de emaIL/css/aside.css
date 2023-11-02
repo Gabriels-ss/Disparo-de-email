@@ -1,0 +1,45 @@
+aside {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background-color: #4E8B96;
+}
+
+aside button {
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* sombra */
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.124);
+    border: none;
+    box-shadow: 0px 4px 6px rgba(44, 37, 89, 0.388);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+aside button:hover {
+    background-color: #2e7bb4;
+}
+
+aside button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    filter: brightness(80%);
+}
+
+/* Estilos de mídia para dispositivos menores */
+@media screen and (max-width: 768px) {
+    aside {
+        width: 20%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,84 @@
+article {
+    color: aliceblue;
+    position: fixed;
+    margin-top: 85px;
+    right: 0;
+    width: calc(100% - 305px);
+    max-height: calc(100vh - 100px);
+    /* Define uma altura máxima para a barra de rolagem */
+    overflow-y: auto;
+    /* Adiciona a barra de rolagem vertical quando necessário */
+}
+
+td,
+th {
+    color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 2.2.px;
+}
+
+th {
+    background-color: #3b6a71;
+}
+
+td {
+    background-color: #678c96;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#divBotoes {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnEditar,
+#btnExcluir {
+    font-size: 15px;
+    width: 90px;
+    border-radius: 4px;
+}
+
+#btnEditar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnEditar:hover {
+    background-color: darkgreen;
+}
+
+#btnEditar:active {
+    transform: scale(0.95);
+}
+
+#btnExcluir {
+
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnExcluir:hover {
+    background-color: darkred;
+}
+
+#btnExcluir:active {
+    transform: scale(0.95);
+}
